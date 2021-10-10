@@ -17,9 +17,9 @@ class ReserveController {
     if (String(house.user) === String(user_id)) {
       return res.status(401).json({error: "Not Authorized"});
     }
-    
+
     if (house.status !== true) {
-      return res.status(401).json({error: "House not avaiable"});
+      return res.status(401).json({error: "House not available"});
     }
 
     const reserve = await Reserve.create({
