@@ -2,6 +2,7 @@ import { Router } from 'express';
 import HouseController from './controllers/HouseController';
 import SessionController from './controllers/SessionController';
 import DashboardController from './controllers/DashboardController';
+import ReserveController from './controllers/ReserveController';
 import multer from 'multer';
 import uploadConfig from './config/upload';
 
@@ -17,5 +18,7 @@ routes.put('/houses/:house_id', upload.single('thumbnail'), HouseController.upda
 routes.delete('/houses', HouseController.destroy);
 
 routes.get('/dashboard', DashboardController.show);
+
+routes.post('/houses/:house_id/reserve', ReserveController.store)
 
 export default routes;
