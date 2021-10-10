@@ -6,7 +6,7 @@ class App {
   constructor() {
     this.server = express();
 
-    const MONGO_DB_URL = "mongodb://localhost:27017/devHouse";
+    const MONGO_DB_URL = "mongodb://localhost:3333";
 
     // const DB_NAME = "devHouse";
 
