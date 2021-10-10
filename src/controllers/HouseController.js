@@ -37,7 +37,7 @@ class HouseController {
     const user = await User.findById(user_id);
     const house = await House.findById(house_id);
 
-    if(String(user._id) !== String(house.user)) {
+    if(!user || !house || String(user._id) !== String(house.user)) {
       return res.status(401).json({ error: "Not Authorized!"});
     }
 
@@ -61,7 +61,7 @@ class HouseController {
     const house = await House.findById(house_id);
 
     console.log(user);
-    if(!user || String(user._id) !== String(house.user)) {
+    if(!user || !house || String(user._id) !== String(house.user)) {
       return res.status(401).json({ error: "Not Authorized!"});
     }
 
