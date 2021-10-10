@@ -6,9 +6,9 @@ class App {
   constructor() {
     this.server = express();
 
-    const MONGO_DB_URL = "mongodb://localhost:3333";
+    const MONGO_DB_URL = "mongodb://localhost:27017";
 
-    // const DB_NAME = "devHouse";
+    const DB_NAME = "devHouse";
 
     mongoose.connect(MONGO_DB_URL, {
       useNewUrlParser: true,
