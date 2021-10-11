@@ -15,25 +15,54 @@
 # :package: Routes
 
 ### These prints were taken using postman!
-The routes were created using route params, query params and headers.
+The routes were created using route params, query params and headers.  
+Some of the routes use user id verification in the request header.
 
 ---
 
 ## :file_folder: GET
 
-![Imagem do projeto]()
+Get created houses by user.
+![Imagem do projeto](src/assets/get_dashboard.png)
+
+Get reserves made by user.
+![Imagem do projeto](src/assets/get_reserves.png)
+
+Get houses depend on status.
+![Imagem do projeto](src/assets/get_house.png)
 
 ## :file_folder: POST
+Reserve house.
+![Imagem do projeto](src/assets/post_house_reserve.png)
 
-![Imagem do projeto]()
+Create house.
+![Imagem do projeto](src/assets/post_house2.png)
+
+Create house - Invalid body request
+![Imagem do projeto](src/assets/post_houses.png)
+
+Login by email - Invalid email
+![Imagem do projeto](src/assets/post_session.png)
+
+Login by email
+![Imagem do projeto](src/assets/post_sessions2.png)
 
 ## :file_folder: PUT
+Updated house.
+![Imagem do projeto](src/assets/put_house.png)
 
-![Imagem do projeto]()
+Update house - Invalid body request
+![Imagem do projeto](src/assets/put_house2.png)
 
 ## :file_folder: DELETE
+Delete Reserve
+![Imagem do projeto](src/assets/delete_cancel_reserve.png)
 
-![Imagem do projeto]()
+Delete House
+![Imagem do projeto](src/assets/delete_house.png)
+
+Delete House - Invalid user_id header request
+![Imagem do projeto](src/assets/delete_house2.png)
 
 
 <br />
