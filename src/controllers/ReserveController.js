@@ -1,5 +1,4 @@
 import Reserve from "../models/Reserve";
-import User from "../models/User";
 import House from "../models/House";
 
 class ReserveController {
