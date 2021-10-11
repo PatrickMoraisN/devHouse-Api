@@ -94,7 +94,7 @@ class HouseController {
 
       return res.json({ success: "House deleted!" });
     } catch (err) {
-      return res.status(400).json({ error: "validation error" });
+      return res.status(400).json({ error: "Validation error!" });
     }
   }
 }
