@@ -33,9 +33,6 @@ class SessionController {
     }
   }
 
-  index(req, res) {
-    return res.json("funfando");
-  }
 }
 
 export default new SessionController();
