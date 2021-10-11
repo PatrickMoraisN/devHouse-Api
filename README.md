@@ -11,7 +11,6 @@
 - [Technologies](#rocket-tecnologias-usadas)
 - [Autor](#closed_book-author)
 <br />
-:flags:
 ---
 # :package: Routes
 
