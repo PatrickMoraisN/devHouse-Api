@@ -75,7 +75,7 @@ class HouseController {
       }
     );
 
-    return res.send();
+    return res.json({message: "Updated!"});
   }
 
   async destroy(req, res) {
@@ -85,7 +85,6 @@ class HouseController {
     const user = await User.findById(user_id);
     const house = await House.findById(house_id);
 
-    console.log(user);
     if (!user || !house || String(user._id) !== String(house.user)) {
       return res.status(401).json({ error: "Not Authorized!" });
     }
