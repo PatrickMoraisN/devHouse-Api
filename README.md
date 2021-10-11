@@ -3,12 +3,12 @@
 
 # :pushpin: Index
 - Routes
-  - [GET](#camera_flash-project-media)
-  - [POST](#camera_flash-project-media)
-  - [PUT](#camera_flash-project-media)
-  - [DELETE](#camera_flash-project-media)
+  - [GET](#file_folder-GET)
+  - [POST](#file_folder-POST)
+  - [PUT](#file_folder-PUT)
+  - [DELETE](#file_folder-DELETE)
 - [About](#monocle_face-about)
-- [Technologies](#rocket-tecnologias-usadas)
+- [Technologies](#rocket-technologies)
 - [Autor](#closed_book-author)
 <br />
 ---
