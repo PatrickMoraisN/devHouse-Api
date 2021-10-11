@@ -22,46 +22,46 @@ Some of the routes use user id verification in the request header.
 
 ## :file_folder: GET
 
-Get created houses by user.
+Get created houses by user.   
 ![Imagem do projeto](src/assets/get_dashboard.png)
 
-Get reserves made by user.
+Get reserves made by user.   
 ![Imagem do projeto](src/assets/get_reserves.png)
 
-Get houses depend on status.
+Get houses depend on status.   
 ![Imagem do projeto](src/assets/get_house.png)
 
 ## :file_folder: POST
-Reserve house.
+Reserve house.   
 ![Imagem do projeto](src/assets/post_house_reserve.png)
 
-Create house.
+Create house.   
 ![Imagem do projeto](src/assets/post_house2.png)
 
-Create house - Invalid body request.
+Create house - Invalid body request.   
 ![Imagem do projeto](src/assets/post_houses.png)
 
-Login by email - Invalid email.
+Login by email - Invalid email.   
 ![Imagem do projeto](src/assets/post_session.png)
 
-Login by email.
+Login by email.   
 ![Imagem do projeto](src/assets/post_sessions2.png)
 
 ## :file_folder: PUT
-Updated house.
+Updated house.   
 ![Imagem do projeto](src/assets/put_house.png)
 
-Update house - Invalid body request.
+Update house - Invalid body request.   
 ![Imagem do projeto](src/assets/put_house2.png)
 
 ## :file_folder: DELETE
-Delete Reserve.
+Delete Reserve.   
 ![Imagem do projeto](src/assets/delete_cancel_reserve.png)
 
-Delete House.
+Delete House.   
 ![Imagem do projeto](src/assets/delete_house.png)
 
-Delete House - Invalid user_id header request.
+Delete House - Invalid user_id header request.   
 ![Imagem do projeto](src/assets/delete_house2.png)
 
 
