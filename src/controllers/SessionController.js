@@ -32,7 +32,6 @@ class SessionController {
       console.log(err.message);
     }
   }
-
 }
 
 export default new SessionController();
