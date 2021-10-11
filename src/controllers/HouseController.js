@@ -75,23 +75,27 @@ class HouseController {
       }
     );
 
-    return res.json({message: "Updated!"});
+    return res.json({ message: "Updated!" });
   }
 
   async destroy(req, res) {
-    const { house_id } = req.body;
-    const { user_id } = req.headers;
+    try {
+      const { house_id } = req.body;
+      const { user_id } = req.headers;
 
-    const user = await User.findById(user_id);
-    const house = await House.findById(house_id);
+      const user = await User.findById(user_id);
+      const house = await House.findById(house_id);
 
-    if (!user || !house || String(user._id) !== String(house.user)) {
-      return res.status(401).json({ error: "Not Authorized!" });
+      if (!user || !house || String(user._id) !== String(house.user)) {
+        return res.status(401).json({ error: "Not Authorized!" });
+      }
+
+      await House.findByIdAndDelete({ _id: house_id });
+
+      return res.json({ success: "House deleted!" });
+    } catch (err) {
+      return res.status(400).json({ error: "validation error" });
     }
-
-    await House.findByIdAndDelete({ _id: house_id });
-
-    return res.json({ success: "House deleted!" });
   }
 }
 
