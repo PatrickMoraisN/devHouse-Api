@@ -3,6 +3,19 @@ import User from '../models/User';
 import House from '../models/House';
 
 class ReserveController {
+
+  async index(req, res) {
+    const { user_id } = req.headers;
+
+    if (!user_id) return res.status(401).json({error: "User_id required"})
+    
+    const reserves = await Reserve.find({ user: user_id }).populate('house');
+
+    if (!reserves) return res.status(404).json({message: "Reserves not found"})
+
+    return res.json(reserves);
+  }
+
   async store(req, res) {
     const { user_id } = req.headers;
     const { house_id } = req.params;
