@@ -9,7 +9,7 @@
   - [DELETE](#file_folder-DELETE)
 - [About](#monocle_face-about)
 - [Technologies](#rocket-technologies)
-- [Autor](#closed_book-author)
+- [Author](#closed_book-author)
 <br />
 
 ---
